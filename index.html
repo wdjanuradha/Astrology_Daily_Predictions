@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Daily Astrology Predictions</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Daily Astrology Predictions</h1>
+        <label for="languageSelector">Select Language:</label>
+        <select id="languageSelector" onchange="switchLanguage()">
+            <option value="en">English</option>
+            <option value="si">සිංහල</option>
+        </select>
+        <label id="selectLagnaLabel" for="lagna">Choose Your Lagna:</label>
+        <select id="lagna">
+            <option value="">Select Lagna(ඔබගේ ලග්නය තෝරන්න.)</option>
+            <option value="aries">Aries(මේශ)</option>
+            <option value="taurus">Taurus(වෘෂභ)</option>
+            <option value="gemini">Gemini(මිථුන)</option>
+            <option value="cancer">Cancer(කටක)</option>
+            <option value="leo">Leo(සිංහ)</option>
+            <option value="virgo">Virgo(කන්‍යා)</option>
+            <option value="libra">Libra(තුලා)</option>
+            <option value="scorpio">Scorpio(වෘශ්චික)</option>
+            <option value="sagittarius">Sagittarius(ධනු)</option>
+            <option value="capricorn">Capricorn(මකර)</option>
+            <option value="aquarius">Aquarius(කුම්භ)</option>
+            <option value="pisces">Pisces(මීන)</option>
+        </select>
+        <button onclick="getPredictions()">Get Predictions</button>
+    </header>
+
+    <main id="resultsSection">
+        <h2 id="resultsTitle">Today's Predictions</h2>
+        <div id="predictions"></div>
+    </main>
+
+    <footer>
+        <p id="footerText">Astrology Web App © 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
